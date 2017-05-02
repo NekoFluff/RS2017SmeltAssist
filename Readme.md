@@ -24,11 +24,9 @@ Latest version of Java Development Kit.  "1.8.0_121"
 * [Java Development Kit](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) - Development Kit Libraries
 
 
-## Contributing
-
-
 ## Authors
 Cody Roberson "Necrovarus 1" - Lead Developer
+
 "Ciel Myst" - Algorithm Designer
 
 ## License
