@@ -17,7 +17,7 @@ In development
 Latest version of Java. "1.8.0_131"
 Latest version of Java Development Kit.  "1.8.0_121"
 
-### Dependancies
+### Dependencies
 * [javax.json](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22javax.json%22) - For JSON data processing
 * [javax.json-api](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22javax.json-api%22) - For JSON data processing
 
