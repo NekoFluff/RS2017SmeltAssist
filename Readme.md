@@ -17,6 +17,11 @@ In development
 Latest version of Java. "1.8.0_131"
 Latest version of Java Development Kit.  "1.8.0_121"
 
+### Dependancies
+*[javax.json](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22javax.json%22)
+*[javax.json-api](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22javax.json-api%22)
+
+
 
 ## Built With
 
@@ -27,8 +32,8 @@ Latest version of Java Development Kit.  "1.8.0_121"
 ## Authors
 Cody Roberson "Necrovarus 1" - Lead Developer
 
-"Ciel Myst" - Algorithm Designer
+"Ciel Myst" - Algorithm Designer / Lead Aesthetics Director
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the License.md file for details
 

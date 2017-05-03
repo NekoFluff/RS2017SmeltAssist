@@ -10,17 +10,34 @@ import javax.swing.JComboBox;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JTextField;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class SmeltAssist
 {
 
 	private JFrame frmRunescapeSmelt;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
-	private JTextField textField_3;
-	private JTextField textField_4;
+	private JTextField inp_orePrice;
+	private JTextField inp_gold;
+	private JTextField inp_coalPrice;
+	private JTextField inp_natPrice;
+	private JTextField inp_barPrice;
 
+	
+	//ITEM IDS
+	int runiteOreID = 451;
+	int runiteBarID = 2363;
+	int adamantOreID = 449;
+	int adamantBarID = 2361;
+	int mithrilOreID = 447;
+	int mithrilBarID = 2359;
+	int coalID = 453;
+	int natID = 561;
+	
+	DataHandler dh = new DataHandler();
+	
+	
+	
 	/**
 	 * Launch the application.
 	 */
@@ -129,6 +146,52 @@ public class SmeltAssist
 		frmRunescapeSmelt.getContentPane().add(lblBarPrice);
 		
 		JComboBox<String> comboBox = new JComboBox<String>();
+		comboBox.addActionListener(new ActionListener() 
+		{
+			public void actionPerformed(ActionEvent e)
+			{
+				if(e.getActionCommand().equals("comboBoxChanged"))
+				{
+					//if action performed ie someone changes the combo box value, set metal to the current selected value
+					String metal = (String)comboBox.getSelectedItem();
+					try
+					{
+						switch(metal)
+						{
+							case "Select One":
+								inp_orePrice.setText("Select a metal type");
+								inp_coalPrice.setText("Select a metal type");
+								inp_natPrice.setText("Select a metal type");
+								inp_barPrice.setText("Select a metal type");
+								break;
+							case "Mithril":
+								inp_orePrice.setText(Integer.toString(dh.getPrice(mithrilOreID)));
+								inp_barPrice.setText(Integer.toString(dh.getPrice(mithrilBarID)));
+								inp_coalPrice.setText(Integer.toString(dh.getPrice(coalID)));
+								inp_natPrice.setText(Integer.toString(dh.getPrice(natID)));
+								break;
+							case "Adamant":
+								inp_orePrice.setText(Integer.toString(dh.getPrice(adamantOreID)));
+								inp_barPrice.setText(Integer.toString(dh.getPrice(adamantBarID)));
+								inp_coalPrice.setText(Integer.toString(dh.getPrice(coalID)));
+								inp_natPrice.setText(Integer.toString(dh.getPrice(natID)));
+								break;
+							case "Runite":
+								inp_orePrice.setText(Integer.toString(dh.getPrice(runiteOreID)));
+								inp_barPrice.setText(Integer.toString(dh.getPrice(mithrilBarID)));
+								inp_coalPrice.setText(Integer.toString(dh.getPrice(coalID)));
+								inp_natPrice.setText(Integer.toString(dh.getPrice(natID)));
+								break;
+						}
+					} 
+					catch (Exception Ex)
+					{
+						Ex.printStackTrace();
+					}
+				}
+				
+			}
+		});
 		comboBox.setModel(new DefaultComboBoxModel<String>(new String[] {"Select One", "Mithril", "Adamant", "Runite"}));
 		comboBox.setBounds(10, 32, 98, 20);
 		frmRunescapeSmelt.getContentPane().add(comboBox);
@@ -141,28 +204,28 @@ public class SmeltAssist
 		lblRunitePrice.setBounds(10, 63, 98, 14);
 		frmRunescapeSmelt.getContentPane().add(lblRunitePrice);
 		
-		textField = new JTextField();
-		textField.setBounds(10, 82, 127, 20);
-		frmRunescapeSmelt.getContentPane().add(textField);
-		textField.setColumns(10);
+		inp_orePrice = new JTextField();
+		inp_orePrice.setBounds(10, 82, 127, 20);
+		frmRunescapeSmelt.getContentPane().add(inp_orePrice);
+		inp_orePrice.setColumns(10);
 		
 		JLabel lblGoldToSpend = new JLabel("Gold to Spend");
 		lblGoldToSpend.setBounds(147, 11, 103, 14);
 		frmRunescapeSmelt.getContentPane().add(lblGoldToSpend);
 		
-		textField_1 = new JTextField();
-		textField_1.setBounds(147, 32, 132, 20);
-		frmRunescapeSmelt.getContentPane().add(textField_1);
-		textField_1.setColumns(10);
+		inp_gold = new JTextField();
+		inp_gold.setBounds(147, 32, 132, 20);
+		frmRunescapeSmelt.getContentPane().add(inp_gold);
+		inp_gold.setColumns(10);
 		
 		JLabel lblCoalPrice = new JLabel("Coal Price");
 		lblCoalPrice.setBounds(10, 113, 98, 14);
 		frmRunescapeSmelt.getContentPane().add(lblCoalPrice);
 		
-		textField_2 = new JTextField();
-		textField_2.setBounds(10, 129, 127, 20);
-		frmRunescapeSmelt.getContentPane().add(textField_2);
-		textField_2.setColumns(10);
+		inp_coalPrice = new JTextField();
+		inp_coalPrice.setBounds(10, 129, 127, 20);
+		frmRunescapeSmelt.getContentPane().add(inp_coalPrice);
+		inp_coalPrice.setColumns(10);
 		
 		JButton p5_orePrice = new JButton("+5%");
 		
@@ -185,10 +248,10 @@ public class SmeltAssist
 		lblNatureRunePrice.setBounds(10, 157, 127, 14);
 		frmRunescapeSmelt.getContentPane().add(lblNatureRunePrice);
 		
-		textField_3 = new JTextField();
-		textField_3.setBounds(10, 172, 127, 20);
-		frmRunescapeSmelt.getContentPane().add(textField_3);
-		textField_3.setColumns(10);
+		inp_natPrice = new JTextField();
+		inp_natPrice.setBounds(10, 172, 127, 20);
+		frmRunescapeSmelt.getContentPane().add(inp_natPrice);
+		inp_natPrice.setColumns(10);
 		
 		JButton m5_natPrice = new JButton("-5%");
 		m5_natPrice.setBounds(217, 171, 62, 23);
@@ -207,13 +270,13 @@ public class SmeltAssist
 		frmRunescapeSmelt.getContentPane().add(lblNetBarIncome);
 		
 		JLabel lblBarPrice_1 = new JLabel("Bar Price");
-		lblBarPrice_1.setBounds(10, 203, 46, 14);
+		lblBarPrice_1.setBounds(10, 203, 98, 14);
 		frmRunescapeSmelt.getContentPane().add(lblBarPrice_1);
 		
-		textField_4 = new JTextField();
-		textField_4.setBounds(10, 222, 127, 20);
-		frmRunescapeSmelt.getContentPane().add(textField_4);
-		textField_4.setColumns(10);
+		inp_barPrice = new JTextField();
+		inp_barPrice.setBounds(10, 222, 127, 20);
+		frmRunescapeSmelt.getContentPane().add(inp_barPrice);
+		inp_barPrice.setColumns(10);
 		
 		JButton button = new JButton("+5%");
 		button.setBounds(147, 221, 62, 23);
