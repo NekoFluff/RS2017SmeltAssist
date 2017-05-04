@@ -38,12 +38,12 @@ Cody Roberson "Necrovarus 1" - Lead Developer
 ## License
 This project is licensed under the MIT License - see the License.md file for details
 
-* Copyright of JSON-api dependency: Copyright (c) 2011-2017 Oracle and/or its affiliates. All rights reserved. eneral Public License Version 2
+* Copyright of JSON-api dependency: Copyright (c) 2011-2017 Oracle and/or its affiliates. All rights reserved. General Public License Version 2
 
- * Copyright of Json dependency:  Copyright (c) 2011-2017 Oracle and/or its affiliates. All rights reserved. eneral Public License Version 2
+ * Copyright of Json dependency:  Copyright (c) 2011-2017 Oracle and/or its affiliates. All rights reserved. General Public License Version 2
 
 
-* Jagex ®, RuneScape ®, Chronicle RuneScape Legends ®, Block N Load ®, Ace of Spades ® and FunOrb ® are registered and/or unregistered trade marks of Jagex Limited in the United Kingdom, the United States and other countries. All third party trade marks are the property of their respective owners.
+* Jagex ®, RuneScape ®, Chronicle RuneScape Legends ®, Block N Load ®, Ace of Spades ® and FunOrb ® are registered and/or unregistered trade marks of Jagex Limited in the United Kingdom, the United States and other countries.
  
  
 
