@@ -38,6 +38,15 @@ Cody Roberson "Necrovarus 1" - Lead Developer
 ## License
 This project is licensed under the MIT License - see the License.md file for details
 
+* Copyright of JSON-api dependency: Copyright (c) 2011-2017 Oracle and/or its affiliates. All rights reserved. eneral Public License Version 2
+
+ * Copyright of Json dependency:  Copyright (c) 2011-2017 Oracle and/or its affiliates. All rights reserved. eneral Public License Version 2
+
+
+* Jagex ®, RuneScape ®, Chronicle RuneScape Legends ®, Block N Load ®, Ace of Spades ® and FunOrb ® are registered and/or unregistered trade marks of Jagex Limited in the United Kingdom, the United States and other countries. All third party trade marks are the property of their respective owners.
+ 
+ 
+
 ## Download
 ### Please note: the compiled version is available here for those who are unable to compile it themselves, it is strongly recommended to download the source and compile yourself for safety, underatanding, and security.
 *  [Runescape Smelt Assistant vAlpha 0.2](https://www.dropbox.com/s/34mjo6evmm2jrfq/Runescape%20SmeltAssist2017%20v0.2.jar?dl=0) - Alpha v0.2 (Includes required Libraries)
