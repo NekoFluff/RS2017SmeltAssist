@@ -50,4 +50,4 @@ This project is licensed under the MIT License - see the License.md file for det
 
 ## Download
 ### Please note: the compiled version is available here for those who are unable to compile it themselves, it is strongly recommended to download the source and compile yourself for safety, underatanding, and security.
-*  [Runescape Smelt Assistant vAlpha 0.3](https://www.dropbox.com/s/wrd2fycw6jntogh/Runescape%20SmeltAssist2017%20v0.3.jar?dl=0) - Alpha v0.2 (Includes required Libraries)
+*  [Runescape Smelt Assistant vAlpha 0.3](https://www.dropbox.com/s/wrd2fycw6jntogh/Runescape%20SmeltAssist2017%20v0.3.jar?dl=0) - Alpha v0.3 (Includes required Libraries)
