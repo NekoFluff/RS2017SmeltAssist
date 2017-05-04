@@ -13,6 +13,8 @@ import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.Font;
+import java.awt.Color;
 
 public class SmeltAssist
 {
@@ -34,6 +36,9 @@ public class SmeltAssist
 	int mithrilBarID = 2359;
 	int coalID = 453;
 	int natID = 561;
+	
+	//text color
+	
 	
 	DataHandler dh = new DataHandler();
 	
@@ -75,6 +80,7 @@ public class SmeltAssist
 	private void initialize()
 	{
 		frmRunescapeSmelt = new JFrame();
+		frmRunescapeSmelt.getContentPane().setForeground(new Color(0, 0, 0));
 		frmRunescapeSmelt.setTitle("Runescape 2017 Smelt Assist");
 		frmRunescapeSmelt.setBounds(100, 100, 529, 390);
 		//When exit is clicked, close everything/
@@ -103,15 +109,15 @@ public class SmeltAssist
 		frmRunescapeSmelt.getContentPane().add(lblOres);
 		
 		JSeparator separator_1 = new JSeparator();
-		separator_1.setBounds(330, 136, 176, 14);
+		separator_1.setBounds(330, 113, 176, 14);
 		frmRunescapeSmelt.getContentPane().add(separator_1);
 		
 		JLabel lblEconomics = new JLabel("Economics");
-		lblEconomics.setBounds(384, 151, 72, 14);
+		lblEconomics.setBounds(384, 122, 72, 14);
 		frmRunescapeSmelt.getContentPane().add(lblEconomics);
 		
 		JLabel lbltcosttxt = new JLabel("Total Cost:");
-		lbltcosttxt.setBounds(344, 201, 72, 14);
+		lbltcosttxt.setBounds(340, 163, 72, 14);
 		frmRunescapeSmelt.getContentPane().add(lbltcosttxt);
 		
 		JLabel lbl_oreCount = new JLabel("0");
@@ -127,15 +133,15 @@ public class SmeltAssist
 		frmRunescapeSmelt.getContentPane().add(lbl_coalCount);
 		
 		JLabel lblGoldBudget = new JLabel("Gold Budget:");
-		lblGoldBudget.setBounds(344, 176, 72, 14);
+		lblGoldBudget.setBounds(340, 138, 72, 14);
 		frmRunescapeSmelt.getContentPane().add(lblGoldBudget);
 		
 		JLabel lblNewLabel_1 = new JLabel("GP Left:");
-		lblNewLabel_1.setBounds(344, 226, 46, 14);
+		lblNewLabel_1.setBounds(340, 188, 46, 14);
 		frmRunescapeSmelt.getContentPane().add(lblNewLabel_1);
 		
 		JLabel lblBarPrice = new JLabel("Bar Price:");
-		lblBarPrice.setBounds(344, 251, 87, 14);
+		lblBarPrice.setBounds(340, 213, 87, 14);
 		frmRunescapeSmelt.getContentPane().add(lblBarPrice);
 		
 		JComboBox<String> comboBox = new JComboBox<String>();
@@ -380,7 +386,7 @@ public class SmeltAssist
 		frmRunescapeSmelt.getContentPane().add(p5_natPrice);
 		
 		JLabel lblNetIncome = new JLabel("Net Income:");
-		lblNetIncome.setBounds(344, 276, 72, 14);
+		lblNetIncome.setBounds(340, 238, 72, 14);
 		frmRunescapeSmelt.getContentPane().add(lblNetIncome);
 		
 		JLabel lblBarPrice_1 = new JLabel("Bar Price");
@@ -442,40 +448,51 @@ public class SmeltAssist
 		frmRunescapeSmelt.getContentPane().add(m5_barPrice);
 		
 		JLabel lblProfit = new JLabel("Profit:");
-		lblProfit.setBounds(344, 301, 46, 14);
+		lblProfit.setForeground(new Color(0, 0, 0));
+		lblProfit.setBounds(340, 263, 46, 14);
 		frmRunescapeSmelt.getContentPane().add(lblProfit);
 		
 		JLabel lblgoldBudget = new JLabel("0");
-		lblgoldBudget.setBounds(429, 176, 111, 14);
+		lblgoldBudget.setBounds(425, 138, 111, 14);
 		frmRunescapeSmelt.getContentPane().add(lblgoldBudget);
 		
 		JLabel lbl_totalCost = new JLabel("0");
-		lbl_totalCost.setBounds(415, 201, 111, 14);
+		lbl_totalCost.setBounds(411, 163, 111, 14);
 		frmRunescapeSmelt.getContentPane().add(lbl_totalCost);
 		
 		JLabel lbl_gpRemain = new JLabel("0");
-		lbl_gpRemain.setBounds(395, 226, 111, 14);
+		lbl_gpRemain.setBounds(391, 188, 111, 14);
 		frmRunescapeSmelt.getContentPane().add(lbl_gpRemain);
 		
 		JLabel lbl_barPrice = new JLabel("0");
-		lbl_barPrice.setBounds(405, 251, 111, 14);
+		lbl_barPrice.setBounds(401, 213, 111, 14);
 		frmRunescapeSmelt.getContentPane().add(lbl_barPrice);
 		
 		JLabel lbl_netInco = new JLabel("0");
-		lbl_netInco.setBounds(415, 276, 91, 14);
+		lbl_netInco.setBounds(411, 238, 91, 14);
 		frmRunescapeSmelt.getContentPane().add(lbl_netInco);
 		
 		JLabel lbl_profit = new JLabel("0");
-		lbl_profit.setBounds(384, 301, 119, 14);
+		lbl_profit.setForeground(new Color(0, 0, 0));
+		lbl_profit.setFont(new Font("Tahoma", Font.BOLD, 13));
+		lbl_profit.setBounds(380, 263, 119, 14);
 		frmRunescapeSmelt.getContentPane().add(lbl_profit);
 		
-		JLabel lblBaseXpGain = new JLabel("Base Xp gain:");
-		lblBaseXpGain.setBounds(344, 326, 83, 14);
+		JLabel lblBaseXpGain = new JLabel("Smithing Xp:");
+		lblBaseXpGain.setBounds(340, 288, 83, 14);
 		frmRunescapeSmelt.getContentPane().add(lblBaseXpGain);
 		
 		JLabel lbl_xpGainz = new JLabel("0");
-		lbl_xpGainz.setBounds(425, 326, 78, 14);
+		lbl_xpGainz.setBounds(425, 288, 78, 14);
 		frmRunescapeSmelt.getContentPane().add(lbl_xpGainz);
+		
+		JLabel lblMagicXp = new JLabel("Magic XP");
+		lblMagicXp.setBounds(340, 313, 79, 14);
+		frmRunescapeSmelt.getContentPane().add(lblMagicXp);
+		
+		JLabel LBL_magXP = new JLabel("0");
+		LBL_magXP.setBounds(411, 313, 95, 14);
+		frmRunescapeSmelt.getContentPane().add(LBL_magXP);
 		
 		JButton btnCalculate = new JButton("Calculate");
 		btnCalculate.addActionListener(new ActionListener() {
@@ -530,7 +547,9 @@ public class SmeltAssist
 							realCost += setCost;
 						}
 						//Update Stats
+						
 						int netInco = t_barPrice*ores;
+						int tnet = netInco-realCost;
 						lbl_oreCount.setText(ores+"");
 						lbl_natCount.setText(natrunes+"");
 						lbl_coalCount.setText(totalcoal+"");
@@ -539,8 +558,16 @@ public class SmeltAssist
 						lbl_gpRemain.setText((initgold-realCost)+"");
 						lbl_barPrice.setText(inp_barPrice.getText());
 						lbl_netInco.setText((t_barPrice*ores)+"");
-						lbl_profit.setText((netInco-realCost)+"");
+						lbl_profit.setText((tnet)+"");
 						lbl_xpGainz.setText((ores*50)+"");
+						LBL_magXP.setText((natrunes*53)+"");
+						if((tnet) > 0){
+							lbl_profit.setForeground(new Color(0,128,0));
+						} else if(tnet < 0){
+							lbl_profit.setForeground(new Color(128,0,0));
+						} else {
+							lbl_profit.setForeground(new Color(0,0,0));
+						}
 
 					
 					}
@@ -550,8 +577,10 @@ public class SmeltAssist
 				}
 			}
 		});
-		btnCalculate.setBounds(110, 317, 89, 23);
+		btnCalculate.setBounds(120, 309, 89, 23);
 		frmRunescapeSmelt.getContentPane().add(btnCalculate);
+		
+		
 		
 		
 	}
