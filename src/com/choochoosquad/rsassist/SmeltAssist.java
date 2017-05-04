@@ -165,22 +165,22 @@ public class SmeltAssist
 								inp_barPrice.setText("Select a metal type");
 								break;
 							case "Mithril":
-								inp_orePrice.setText(Integer.toString(dh.getPrice(mithrilOreID)));
-								inp_barPrice.setText(Integer.toString(dh.getPrice(mithrilBarID)));
-								inp_coalPrice.setText(Integer.toString(dh.getPrice(coalID)));
-								inp_natPrice.setText(Integer.toString(dh.getPrice(natID)));
+								inp_orePrice.setText(dh.getPrice(mithrilOreID)+"");
+								inp_barPrice.setText(dh.getPrice(mithrilBarID)+"");
+								inp_coalPrice.setText(dh.getPrice(coalID)+"");
+								inp_natPrice.setText(dh.getPrice(natID)+"");
 								break;
 							case "Adamant":
-								inp_orePrice.setText(Integer.toString(dh.getPrice(adamantOreID)));
-								inp_barPrice.setText(Integer.toString(dh.getPrice(adamantBarID)));
-								inp_coalPrice.setText(Integer.toString(dh.getPrice(coalID)));
-								inp_natPrice.setText(Integer.toString(dh.getPrice(natID)));
+								inp_orePrice.setText(dh.getPrice(adamantOreID)+"");
+								inp_barPrice.setText(dh.getPrice(adamantBarID)+"");
+								inp_coalPrice.setText(dh.getPrice(coalID)+"");
+								inp_natPrice.setText(dh.getPrice(natID)+"");
 								break;
 							case "Runite":
-								inp_orePrice.setText(Integer.toString(dh.getPrice(runiteOreID)));
-								inp_barPrice.setText(Integer.toString(dh.getPrice(mithrilBarID)));
-								inp_coalPrice.setText(Integer.toString(dh.getPrice(coalID)));
-								inp_natPrice.setText(Integer.toString(dh.getPrice(natID)));
+								inp_orePrice.setText(dh.getPrice(runiteOreID)+"");
+								inp_barPrice.setText(dh.getPrice(mithrilBarID)+"");
+								inp_coalPrice.setText(dh.getPrice(coalID)+"");
+								inp_natPrice.setText(dh.getPrice(natID)+"");
 								break;
 						}
 					} 
@@ -278,13 +278,13 @@ public class SmeltAssist
 		frmRunescapeSmelt.getContentPane().add(inp_barPrice);
 		inp_barPrice.setColumns(10);
 		
-		JButton button = new JButton("+5%");
-		button.setBounds(147, 221, 62, 23);
-		frmRunescapeSmelt.getContentPane().add(button);
+		JButton p5_barPrice = new JButton("+5%");
+		p5_barPrice.setBounds(147, 221, 62, 23);
+		frmRunescapeSmelt.getContentPane().add(p5_barPrice);
 		
-		JButton button_1 = new JButton("-5%");
-		button_1.setBounds(217, 221, 62, 23);
-		frmRunescapeSmelt.getContentPane().add(button_1);
+		JButton m5_barPrice = new JButton("-5%");
+		m5_barPrice.setBounds(217, 221, 62, 23);
+		frmRunescapeSmelt.getContentPane().add(m5_barPrice);
 		
 		JLabel lblProfit = new JLabel("Profit:");
 		lblProfit.setBounds(398, 300, 46, 14);
