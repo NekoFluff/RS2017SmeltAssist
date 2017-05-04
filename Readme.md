@@ -8,10 +8,10 @@ This tool calculates how much of each resource to purchase given a certain amoun
 the economical side of utilizing this training method.
 
 
+
 # Development Status
-ALPHA V0.1 - Development Release
-	The Initial design has been implemented and so far it performs as desired with the exception of its method for obtaining
-	prices. The price fetcher in the DataHandler class is horribly inefficient.
+ALPHA V0.2 - Development Release
+	Added a total xp gained calculation.
 
 ### Prerequisites
 
@@ -38,3 +38,6 @@ Cody Roberson "Necrovarus 1" - Lead Developer
 ## License
 This project is licensed under the MIT License - see the License.md file for details
 
+## Download
+### Please note: the compiled version is available here for those who are unable to compile it themselves, it is strongly recommended to download the source and compile yourself for safety, underatanding, and security.
+*  [Runescape Smelt Assistant vAlpha 0.2](https://www.dropbox.com/s/34mjo6evmm2jrfq/Runescape%20SmeltAssist2017%20v0.2.jar?dl=0) - Alpha v0.2 (Includes required Libraries)
