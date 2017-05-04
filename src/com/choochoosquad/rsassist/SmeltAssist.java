@@ -469,6 +469,14 @@ public class SmeltAssist
 		lbl_profit.setBounds(384, 301, 119, 14);
 		frmRunescapeSmelt.getContentPane().add(lbl_profit);
 		
+		JLabel lblBaseXpGain = new JLabel("Base Xp gain:");
+		lblBaseXpGain.setBounds(344, 326, 83, 14);
+		frmRunescapeSmelt.getContentPane().add(lblBaseXpGain);
+		
+		JLabel lbl_xpGainz = new JLabel("0");
+		lbl_xpGainz.setBounds(425, 326, 78, 14);
+		frmRunescapeSmelt.getContentPane().add(lbl_xpGainz);
+		
 		JButton btnCalculate = new JButton("Calculate");
 		btnCalculate.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e)
@@ -510,7 +518,7 @@ public class SmeltAssist
 						}
 					if(setCost > initgold)
 					{
-						JOptionPane.showMessageDialog(null, "Error", "Not enough gold", JOptionPane.ERROR_MESSAGE);
+						JOptionPane.showMessageDialog(null, "Not Enough Gold", "Notice", JOptionPane.ERROR_MESSAGE);
 					} else
 					{
 						while(currentGold > setCost)
@@ -532,6 +540,7 @@ public class SmeltAssist
 						lbl_barPrice.setText(inp_barPrice.getText());
 						lbl_netInco.setText((t_barPrice*ores)+"");
 						lbl_profit.setText((netInco-realCost)+"");
+						lbl_xpGainz.setText((ores*50)+"");
 
 					
 					}
@@ -543,5 +552,7 @@ public class SmeltAssist
 		});
 		btnCalculate.setBounds(110, 317, 89, 23);
 		frmRunescapeSmelt.getContentPane().add(btnCalculate);
+		
+		
 	}
 }
