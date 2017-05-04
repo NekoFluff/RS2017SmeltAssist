@@ -1,7 +1,6 @@
 package com.choochoosquad.rsassist;
 
 import java.net.URL;
-import java.util.Collection;
 import java.util.Set;
 import java.io.IOException;
 import java.io.InputStream;
@@ -9,9 +8,7 @@ import java.net.MalformedURLException;
 import javax.json.Json;
 import javax.json.JsonObject;
 import javax.json.JsonReader;
-import javax.json.JsonString;
-import javax.json.JsonValue;
-import javax.json.JsonValue.ValueType;
+
 
 
 
