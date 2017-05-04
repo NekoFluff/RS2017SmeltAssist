@@ -115,15 +115,15 @@ public class SmeltAssist
 		frmRunescapeSmelt.getContentPane().add(lbltcosttxt);
 		
 		JLabel lbl_oreCount = new JLabel("0");
-		lbl_oreCount.setBounds(395, 47, 46, 14);
+		lbl_oreCount.setBounds(395, 47, 111, 14);
 		frmRunescapeSmelt.getContentPane().add(lbl_oreCount);
 		
 		JLabel lbl_natCount = new JLabel("0");
-		lbl_natCount.setBounds(431, 72, 51, 14);
+		lbl_natCount.setBounds(431, 72, 75, 14);
 		frmRunescapeSmelt.getContentPane().add(lbl_natCount);
 		
 		JLabel lbl_coalCount = new JLabel("0");
-		lbl_coalCount.setBounds(385, 97, 46, 14);
+		lbl_coalCount.setBounds(385, 97, 97, 14);
 		frmRunescapeSmelt.getContentPane().add(lbl_coalCount);
 		
 		JLabel lblGoldBudget = new JLabel("Gold Budget:");
@@ -462,11 +462,11 @@ public class SmeltAssist
 		frmRunescapeSmelt.getContentPane().add(lbl_barPrice);
 		
 		JLabel lbl_netInco = new JLabel("0");
-		lbl_netInco.setBounds(415, 276, 46, 14);
+		lbl_netInco.setBounds(415, 276, 91, 14);
 		frmRunescapeSmelt.getContentPane().add(lbl_netInco);
 		
 		JLabel lbl_profit = new JLabel("0");
-		lbl_profit.setBounds(384, 301, 46, 14);
+		lbl_profit.setBounds(384, 301, 119, 14);
 		frmRunescapeSmelt.getContentPane().add(lbl_profit);
 		
 		JButton btnCalculate = new JButton("Calculate");
@@ -541,7 +541,7 @@ public class SmeltAssist
 				}
 			}
 		});
-		btnCalculate.setBounds(147, 317, 89, 23);
+		btnCalculate.setBounds(110, 317, 89, 23);
 		frmRunescapeSmelt.getContentPane().add(btnCalculate);
 	}
 }
