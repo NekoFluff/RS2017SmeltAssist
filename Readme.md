@@ -9,8 +9,9 @@ the economical side of utilizing this training method.
 
 
 # Development Status
-In development
-	Currently Planning and Developing the GUI
+ALPHA V0.1 - Development Release
+	The Initial design has been implemented and so far it performs as desired with the exception of its method for obtaining
+	prices. The price fetcher in the DataHandler class is horribly inefficient.
 
 ### Prerequisites
 
