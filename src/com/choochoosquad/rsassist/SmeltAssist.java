@@ -559,7 +559,26 @@ public class SmeltAssist
 						lbl_barPrice.setText(inp_barPrice.getText());
 						lbl_netInco.setText((t_barPrice*ores)+"");
 						lbl_profit.setText((tnet)+"");
-						lbl_xpGainz.setText((ores*50)+"");
+						
+						switch(metal)
+						{
+							case "Select One":
+								lbl_xpGainz.setText((ores*0)+"");
+								break;
+							case "Mithril":
+								inp_barPrice.setText(dh.getPrice(mithrilBarID)+"");
+								lbl_xpGainz.setText((ores*30)+"");
+								break;
+							case "Adamant":
+								lbl_xpGainz.setText((ores*37.5)+"");
+								break;
+							case "Runite":
+								lbl_xpGainz.setText((ores*50)+"");
+								break;
+							default:
+								lbl_xpGainz.setText("0");
+						}
+						
 						LBL_magXP.setText((natrunes*53)+"");
 						if((tnet) > 0){
 							lbl_profit.setForeground(new Color(0,128,0));
