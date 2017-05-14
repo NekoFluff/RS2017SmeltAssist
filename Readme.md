@@ -10,9 +10,8 @@ the economical side of utilizing this training method.
 
 
 # Development Status
-ALPHA V0.3 - Development Release
-	Added base xp gained stat for Smithing and Magic.
-	Added color code to Profit ie red is bad, green is good.
+ALPHA V0.4 - Development Release
+	Fixed xp gain
 
 ### Prerequisites
 
@@ -46,8 +45,9 @@ This project is licensed under the MIT License - see the License.md file for det
 
 * Jagex ®, RuneScape ®, Chronicle RuneScape Legends ®, Block N Load ®, Ace of Spades ® and FunOrb ® are registered and/or unregistered trade marks of Jagex Limited in the United Kingdom, the United States and other countries.
  
+This project is not authorized, endorsed, or affiliated with Jagex or Oracle in and way. 
  
 
 ## Download
 ### Please note: the compiled version is available here for those who are unable to compile it themselves, it is strongly recommended to download the source and compile yourself for safety, underatanding, and security.
-*  [Runescape Smelt Assistant vAlpha 0.3](https://www.dropbox.com/s/wrd2fycw6jntogh/Runescape%20SmeltAssist2017%20v0.3.jar?dl=0) - Alpha v0.3 (Includes required Libraries)
+*  [Runescape Smelt Assistant vAlpha 0.4](https://www.dropbox.com/s/f8ut0b4h6tvd10i/Runescape%20SmeltAssist2017%20v0.4.jar?dl=0) - Alpha v0.4 (Includes required Libraries)
